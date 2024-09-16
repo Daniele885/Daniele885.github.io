@@ -10,7 +10,7 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
+    'menu header header header header header'
     'menu main main main right right'
     'menu footer footer footer footer footer';
   gap: 10px;
@@ -24,18 +24,36 @@
   padding: 20px 0;
   font-size: 30px;
 }
+  body {
+    background-color: grey;
+  }
+
+    .right {
+      display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+    }
+    .right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+    
+      
 </style>
   <head> 
     <title>Page Title</title> 
   </head> 
   <body> 
-    <h1>My First Heading</h1> 
-    <p>My first paragraph.</p> 
+    <h1>Welcome!</h1> 
+    <p>This is my first web page.</p> 
+    <a class="right" href="url">https: www.youtube.com/watch?v=yynFQl6s6WU </a>
   </body> 
   <div class="grid-container">
-  <header class="header">Header</header>
+  <header class="header">My first page</header>
   <menu class="menu">Menu</menu>
-  <main class="main">Main</main>  
+  <main class="main">Hello world!</main>  
   <nav class="right">Right</nav>
   <footer class="footer">Footer</footer>
 </div>
